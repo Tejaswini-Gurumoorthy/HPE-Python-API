@@ -11,7 +11,7 @@ df= pd.read_csv('hn_logs.tsv', sep='\t', engine='python', names=column_names)
 class CountPandas(Resource):
     def get(self, timestamp, optional_timestamp=None):
         count=0
-        if optional_timestamp ==None: 
+        if optional_timestamp is None: 
             filtered_df= df[df['timestamp'].str.contains(timestamp)]
             count= filtered_df['request'].nunique()
 
@@ -25,7 +25,7 @@ class CountPandas(Resource):
                 filtered_df = df[(df['timestamp'] >= timestamp) & (df['timestamp'] <= optional_timestamp)]
                 count= filtered_df['request'].nunique()
 
-        return {"data":count}
+        return {"count":count}
 
 api.add_resource(CountPandas, "/countpandas/<string:timestamp>/", "/countpandas/<string:timestamp>/<string:optional_timestamp>")
 
