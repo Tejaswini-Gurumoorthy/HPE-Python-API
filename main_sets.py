@@ -28,7 +28,7 @@ class CountSets(Resource):
                             unique_requests.add(line[1])
         
         count = len(unique_requests)
-        return {"data": count}
+        return {"count": count}
 
 api.add_resource(CountSets, "/countsets/<string:timestamp>/", "/countsets/<string:timestamp>/<string:optional_timestamp>")
 
