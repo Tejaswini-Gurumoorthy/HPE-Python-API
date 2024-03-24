@@ -48,7 +48,7 @@ To run this program, follow the instructions below.
 
     The server must be up and running on port 5000 by default.
 
-5. To run the test file, edit the value of the variable ```TIMESTAMP``` in line 8 of the file ```test.py``` with a choice of your own. To test the algorithm using dataframes, uncomment line 13. To test the algorithm using sets, uncomment line 18. 
+5. To run the test file, edit the value of the variable ```TIMESTAMP``` in the file ```test.py``` with a choice of your own. To test the algorithm using dataframes or sets, uncomment the corresponding line in the file ```test.py```.
 
 
 ## Challenges I ran into
