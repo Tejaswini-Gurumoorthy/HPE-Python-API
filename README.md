@@ -31,19 +31,19 @@ To run this program, follow the instructions below.
 
 1. Install Flask is not already present using this command.
 
-    ```pip3 install Flask```
+        pip3 install Flask   
 
 2. Install the pandas library if not already present using this command.
-    ```pip3 install pandas```
+        pip3 install pandas
 
 3. Clone the contents of this repository into a new folder. Make sure to have the file ```hn_logs.tsv``` in the same root folder as that of the contents of this repository.
 
 4. To run the server
     Open a new terminal and run the following command.
     #### Using sets
-        ```python3 main_sets.py```
+        python3 main_sets.py
     #### Using dataframes
-        ```python3 main_pandas.py```
+        python3 main_pandas.py
 
     The server must be up and running on port 5000 by default.
 
