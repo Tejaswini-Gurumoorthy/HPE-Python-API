@@ -34,7 +34,8 @@ To run this program, follow the instructions below.
         pip3 install Flask   
 
 2. Install the pandas library if not already present using this command.
-        pip3 install pandas
+  
+         pip3 install pandas
 
 3. Clone the contents of this repository into a new folder. Make sure to have the file ```hn_logs.tsv``` in the same root folder as that of the contents of this repository.
 
